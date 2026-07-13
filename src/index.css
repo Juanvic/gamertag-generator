@@ -1,5 +1,3 @@
-/* index.css */
-
 :root {
   color-scheme: light dark;
 
@@ -63,8 +61,6 @@
     --color-border: #323238;
   }
 }
-
-/* ---------- Reset ---------- */
 
 *,
 *::before,
