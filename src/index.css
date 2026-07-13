@@ -1,0 +1,169 @@
+/* index.css */
+
+:root {
+  color-scheme: light dark;
+
+  /* ---------- Cores da Marca ---------- */
+  --color-brand: #00ff88;
+  --color-brand-hover: #00cc6a;
+  --color-brand-alpha: rgba(0, 255, 136, 0.1);
+
+  /* ---------- Tema Claro ---------- */
+  --color-bg: #fafafa;
+  --color-bg-app: #f5f5f7;
+  --color-bg-card: #ffffff;
+  --color-bg-input: #ffffff;
+
+  --color-text-title: #121214;
+  --color-text-body: #2f2f33;
+  --color-text-muted: #6b6b76;
+  --color-text-dark: #121214;
+
+  --color-border: #d9d9df;
+
+  /* ---------- Configuração Global ---------- */
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    sans-serif;
+
+  line-height: 1.5;
+  font-weight: 400;
+
+  background: var(--color-bg-app);
+  color: var(--color-text-body);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------- Tema Escuro ---------- */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #fafafa;
+
+    --color-bg-app: #121214;
+    --color-bg-card: #202024;
+    --color-bg-input: #121214;
+
+    --color-text-title: #ffffff;
+    --color-text-body: #c4c4cc;
+    --color-text-muted: #7c7c8a;
+    --color-text-dark: #121214;
+
+    --color-border: #323238;
+  }
+}
+
+/* ---------- Reset ---------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  
+  --s: 30px; /* the size */
+  background: var(--color-bg-app);
+  color: var(--color-text-body);
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+
+  
+  background:
+    conic-gradient(at 60% 60%,var(--color-bg-app) 75%,#0000 0)
+     0 0/calc(5*var(--s)/2) calc(5*var(--s)/2),
+    repeating-conic-gradient(var(--color-bg-app) 0 25%,#0000 0 50%)
+     0 0/calc(5*var(--s)) calc(5*var(--s)),
+    repeating-conic-gradient(var(--color-brand) 0 25%,var(--color-bg-app) 0 50%)
+     0 0/var(--s) var(--s); 
+
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  background: var(--color-brand);
+  color: var(--color-text-dark);
+
+  transition:
+    background-color .2s,
+    transform .15s;
+}
+
+button:hover {
+  background: var(--color-brand-hover);
+}
+
+button:active {
+  transform: scale(.98);
+}
+
+input,
+textarea,
+select {
+  background: var(--color-bg-input);
+  color: var(--color-text-body);
+
+  border: 1px solid var(--color-border);
+  outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--color-brand);
+  box-shadow: 0 0 0 3px var(--color-brand-alpha);
+}
+
+a {
+  color: var(--color-brand);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#root {
+  min-height: 100vh;
+}

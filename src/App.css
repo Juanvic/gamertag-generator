@@ -1,0 +1,52 @@
+.app-titulo {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: absolute;
+  top: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  background-color: var(--color-bg-card);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  min-width: 320px;
+  max-width: fit-content;
+  height: fit-content;
+
+}
+
+.box h1 {
+  font-family: monospace;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: var(--color-text-body);
+}
+
+
+button {
+  background-color: var(--color-brand);
+  color: #121214;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s;
+}
+button:hover {
+  background-color: var(--color-brand-hover);
+}
