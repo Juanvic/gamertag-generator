@@ -17,12 +17,22 @@ const GamertagGenerator = () => {
     generateGamertag();
   }, []);
 
+  function copiarParaTransferencia(){
+    navigator.clipboard.writeText(gamertag);
+  }
+
+  //criar toast para exibir a mensagem de gamertag copiada com sucesso
+
   return (
     <>
       <h1>{gamertag}</h1>
       
       <button id="btn-gerar" onClick={generateGamertag}>
         Gerar Gamertag
+      </button>
+
+      <button id="btn-copiar" onClick={copiarParaTransferencia}>
+        Copiar 
       </button>
 
     </>

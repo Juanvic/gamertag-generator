@@ -50,3 +50,12 @@ button {
 button:hover {
   background-color: var(--color-brand-hover);
 }
+
+#btn-copiar {
+  background-color: #121214;
+  color: #fff;
+}
+
+#btn-copiar:hover {
+  background-color: var(--color-brand-alpha);
+}
