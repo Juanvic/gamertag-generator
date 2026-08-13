@@ -10,12 +10,12 @@ export default defineConfig({
       registerType: 'autoUpdate', // Atualiza o service worker automaticamente
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
       manifest: {
-        name: 'Meu Aplicativo React PWA',
-        short_name: 'ReactPWA',
-        description: 'Uma aplicação React incrível convertida em PWA!',
-        theme_color: '#ffffff',
-        background_color: '#ffffff',
-        display: 'standalone', // Faz abrir como um aplicativo nativo, sem barra do navegador
+        name: 'Gerador de Gamertag',
+        short_name: 'GamertagGenerator',
+        description: 'Aplicação que gera uma gamertag pronta para uso de fácil acesso',
+        theme_color: '#121214',
+        background_color: '#5e6268',
+        display: 'standalone', 
         orientation: 'portrait',
         icons: [
           {
@@ -32,7 +32,7 @@ export default defineConfig({
             src: 'pwa-512x512.png',
             sizes: '512x512',
             type: 'image/png',
-            purpose: 'any maskable' // Importante para ícones adaptativos no Android
+            purpose: 'any maskable' 
           }
         ]
       }
